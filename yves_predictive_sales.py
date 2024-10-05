@@ -1,3 +1,12 @@
+# Colab adapted to Streamlit share
+import streamlit as st
+import pandas as pd
+from prophet import Prophet
+from prophet.plot import plot_plotly
+import plotly.graph_objs as go
+import numpy as np
+
+
 # Generate synthetic sales data
 def generate_sales_data(start_date, end_date, products):
   data = []
